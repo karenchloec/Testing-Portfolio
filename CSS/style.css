@@ -1,81 +1,72 @@
+/* Global Styles */
 body {
     background-color: #E8DEFF;
-    font-family: 'Libre Caslon Display', serif; 
+    font-family: 'Libre Caslon Display', serif;
     font-size: 22px;
 }
 
-.libre-caslon text-regular {
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .libre-caslon text-regular-italic {
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .libre-caslon text-bold {
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-
 h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Libre Caslon Display', serif; 
-    font-weight: 400; 
+    font-family: 'Libre Caslon Display', serif;
+    font-weight: 400;
 }
 
-h1 h2 {
-  font-size: 50px;
-  color: #311848;
+h1, h2 {
+    font-size: 50px;
+    color: #311848;
 }
 
-h3{
-  font-size: 28px;
-  font-style: bold;
-  color: #311848;
-  margin: 0px; /*i need to fix this */
-  font-weight: 600;
+h3 {
+    font-size: 28px;
+    color: #311848;
+    font-weight: 600;
+    margin: 0;
 }
 
 h4 {
-  font-size: 24px;
-  font-style: semi-bold;
-  color: #88102D;
+    font-size: 24px;
+    color: #88102D;
+    font-weight: 600;
 }
-
 
 /* Navigation Styles */
 .inline-block {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: center;
 }
+
 .logo {
-    margin-right: 20px;
+    margin-right: 75px;
     width: 23%;
     padding: 1%;
 }
 
-.nav menu {
+.title {
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+.nav-menu {
     list-style-type: none;
+    padding: 5;
+    display: inline-block;
 }
 
 .nav-menu li {
     display: inline-block;
-    margin-right: 10px;
-    padding: 0 10px;
+    margin-right: 10%;
 }
 
 .nav-menu li a {
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* Set link color */
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
 }
 
 .nav-menu li a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
 }
 
 .navigation {
@@ -99,24 +90,23 @@ ul {
 
 .navigation .logo img,
 .footer .logo img {
-    width: 250px; 
-    height: auto; 
+    width: 250px;
+    height: auto;
 }
 
 .container {
     height: auto;
-    width: 70%; /* Adjust the width */
+    width: 70%;
     padding: 10px;
     float: left;
 }
 
 .right {
-    width: 27%; /* Adjust the width */
+    width: 27%;
     float: right;
-    padding-left: 10px; /* Add some padding */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    padding-left: 10px;
+    box-sizing: border-box;
 }
-
 
 /* Footer Styles */
 .footer {
@@ -134,19 +124,20 @@ ul {
     padding: 0 10px;
 }
 
+/* Button Styles */
 button {
     background-color: transparent;
-    border: 0px solid #311848; /* Add a border for clarity */
-    color: #EDE7E2; /* Text color */
-    padding: 5px 10px; /* Adjust padding as needed */
-    font-size: 55px; /* Adjust font size as needed */
-    cursor: pointer; /* Change cursor to pointer to indicate clickable */
-    transition: background-color 0.3s, color 0.3s; /* Add transition for smoother hover effect */
-  -webkit-text-stroke: 2px #311848; /* For Webkit browsers */
-    text-stroke: 2px #311848; /* Standard property -- idk why this isnt working on vs code but it was working on codepen??*/
+    border: 0px solid #311848;
+    color: #EDE7E2;
+    padding: 5px 10px;
+    font-size: 55px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    -webkit-text-stroke: 2px #311848;
+    text-stroke: 2px #311848;
 }
 
 button:hover {
-    background-color: #C3F0E8; /* Change background color on hover */
-    color: black; /* Change text color on hover */
+    background-color: #C3F0E8;
+    color: black;
 }
