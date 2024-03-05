@@ -45,6 +45,23 @@ h4 {
     margin-top: 2%;
 }
 
+.me {
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+    float: left;
+    padding: 2%;
+}
+
+.pastfuture {
+    float:right;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+}
+
 .nav-menu {
     list-style-type: none;
     padding: 5;
